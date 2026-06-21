@@ -4,190 +4,580 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Multimodal AI Researcher</title>
+
+  <title>Sunghoon Kim | Multimodal AI Researcher</title>
+
+  <meta
+    name="description"
+    content="Sunghoon Kim — M.S. Student in Computer Science at Korea University, researching multimodal AI, Audio-Visual Question Answering, and industrial AI."
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="navbar">
-    <div class="nav-container">
-      <a class="logo" href="#home">Your Name</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Sunghoon Kim home">
+        <span class="brand-mark">SK</span>
+        <span class="brand-name">Sunghoon Kim</span>
+      </a>
 
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#publications">Publications</a>
-        <a href="#awards">Awards & Honors</a>
-        <a href="#projects">Projects</a>
+        <a href="#honors">Honors</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main id="top" class="page-shell">
 
-    <section id="home" class="card intro-card">
-      <img
-        src="assets/profile.png"
-        alt="Profile photo"
-        class="profile-image"
-      />
+    <!-- Profile Header -->
+    <section class="profile-card card">
+      <div class="cover-image"></div>
 
-      <div class="intro-text">
-        <h1>Hello! I'm Your Name.</h1>
-
-        <p>
-          I am an M.S. candidate at Korea University working on multimodal AI,
-          video understanding, and audio-visual question answering.
-        </p>
-
-        <p>
-          My research focuses on designing efficient multimodal reasoning models
-          that connect vision, audio, and language.
-        </p>
-
-        <p>
-          <strong>Research Interests:</strong>
-          Multimodal AI · Video Understanding · Audio-Visual Learning · Industrial AI
-        </p>
-
-        <p>
-          <strong>Contact:</strong>
-          sainthun11@naver.com
-        </p>
-
-        <div class="links">
-          <a href="https://github.com/sainthun11" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Google Scholar</a>
-          <a href="#" target="_blank">LinkedIn</a>
+      <div class="profile-content">
+        <div class="profile-avatar-wrap">
+          <img
+            src="assets/profile.png"
+            alt="Portrait of Sunghoon Kim"
+            class="profile-avatar"
+          />
         </div>
-      </div>
-    </section>
 
-    <section id="news" class="card">
-      <h2>News</h2>
+        <div class="profile-grid">
+          <div class="profile-main">
+            <div class="name-row">
+              <h1>Sunghoon Kim</h1>
+              <span class="verified-badge" title="Research portfolio">✓</span>
+            </div>
 
-      <div class="news-item">
-        <span class="news-number">1</span>
-        <div>
-          <h3>Paper accepted to ECCV 2026</h3>
-          <p>
-            Q-TriM: Question-Guided Tri-Modal Attention for
-            Audio-Visual Question Answering
-          </p>
-        </div>
-        <span class="date">Jun 2026</span>
-      </div>
+            <p class="headline">
+              M.S. Student in Computer Science at Korea University
+            </p>
 
-      <div class="news-item">
-        <span class="news-number">2</span>
-        <div>
-          <h3>Completed industrial AI research internship</h3>
-          <p>
-            Worked on manufacturing property prediction and explainable
-            machine learning.
-          </p>
-        </div>
-        <span class="date">2026</span>
-      </div>
+            <p class="location">
+              Seoul, South Korea ·
+              <a href="mailto:sainthun11@naver.com">Contact</a>
+            </p>
 
-      <div class="news-item">
-        <span class="news-number">3</span>
-        <div>
-          <h3>Received an award in satellite image classification competition</h3>
-          <p>
-            Built a weighted ensemble using RegNet, ViT, EfficientNet,
-            and FocalNet.
-          </p>
-        </div>
-        <span class="date">2025</span>
-      </div>
-    </section>
+            <p class="profile-summary">
+              Multimodal AI researcher working on video, audio, and language
+              understanding for real-world intelligent systems.
+            </p>
 
-    <section id="publications" class="card">
-      <h2>Publications</h2>
+            <div class="hero-actions">
+              <a class="button primary" href="#research">Research Highlights</a>
 
-      <div class="publication">
-        <img
-          src="assets/qtrim-teaser.png"
-          alt="Q-TriM teaser"
-          class="paper-image"
-        />
+              <a
+                class="button secondary"
+                href="https://github.com/Kim-Sung-Hun"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
 
-        <div>
-          <h3>
-            Q-TriM: Question-Guided Tri-Modal Attention for
-            Audio-Visual Question Answering
-          </h3>
+              <a
+                class="button secondary"
+                href="https://www.linkedin.com/in/%EC%84%B1%ED%9B%88-%EA%B9%80-31125525a/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
 
-          <p>
-            <strong>Your Name</strong>, Advisor Name
-          </p>
+              <!-- Upload your CV PDF to assets/Sunghoon-Kim-CV.pdf -->
+              <a
+                class="button secondary"
+                href="assets/Sunghoon-Kim-CV.pdf"
+                target="_blank"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
 
-          <p>
-            European Conference on Computer Vision (ECCV), 2026
-          </p>
+          <div class="affiliation-card">
+            <div class="affiliation-logo">KU</div>
 
-          <p>
-            A shallow and parallel multimodal fusion framework for
-            question-guided video, audio, and text reasoning.
-          </p>
-
-          <div class="paper-links">
-            <a href="#" target="_blank">Paper</a>
-            <a href="#" target="_blank">Code</a>
-            <a href="#" target="_blank">Project Page</a>
+            <div>
+              <strong>Korea University</strong>
+              <span>Department of Computer Science</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="awards" class="card">
-      <h2>Awards & Honors</h2>
+    <div class="content-layout">
+      <div class="main-column">
 
-      <ul>
-        <li>ECCV 2026 First-Author Paper Acceptance</li>
-        <li>Outstanding Award, Public Data Utilization Competition</li>
-        <li>Excellence Award, Satellite Image Classification Competition</li>
-        <li>Patent Filed: Question-Guided Tri-Modal Attention Framework</li>
-      </ul>
-    </section>
+        <!-- About -->
+        <section id="about" class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">PROFILE</p>
+              <h2>About</h2>
+            </div>
+          </div>
 
-    <section id="projects" class="card">
-      <h2>Selected Projects</h2>
+          <div class="about-copy">
+            <p>
+              I am an M.S. student in Computer Science at Korea University,
+              researching multimodal AI with a focus on Audio-Visual Question
+              Answering, cross-modal attention, and efficient video-audio-language
+              reasoning.
+            </p>
 
-      <div class="project-grid">
-        <div class="project">
-          <h3>Industrial Property Prediction</h3>
-          <p>
-            Developed machine-learning models for manufacturing property prediction
-            with XGBoost and SHAP-based interpretation.
-          </p>
-        </div>
+            <p>
+              My work spans the full research process—from identifying research
+              questions and designing model architectures to implementation,
+              experimentation, analysis, and paper writing. I am also interested
+              in applying machine learning to practical industrial problems.
+            </p>
+          </div>
 
-        <div class="project">
-          <h3>Frost Level Prediction</h3>
-          <p>
-            Built a four-stage classification model for outdoor-unit frost level
-            prediction to support defrosting decisions.
-          </p>
-        </div>
+          <div class="tag-list">
+            <span>Multimodal AI</span>
+            <span>Audio-Visual Learning</span>
+            <span>Computer Vision</span>
+            <span>Generative AI</span>
+            <span>Industrial AI</span>
+            <span>PyTorch</span>
+          </div>
+        </section>
 
-        <div class="project">
-          <h3>Satellite Image Classification</h3>
-          <p>
-            Designed a weighted ensemble using RegNet, ViT, EfficientNet,
-            and FocalNet for multi-class satellite image classification.
-          </p>
-        </div>
+        <!-- Featured Research -->
+        <section id="research" class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">FEATURED RESEARCH</p>
+              <h2>Q-TriM</h2>
+            </div>
+
+            <span class="status-badge">ECCV 2026</span>
+          </div>
+
+          <div class="featured-research">
+            <div class="research-image-wrap">
+              <img
+                src="assets/qtrim-teaser.png"
+                alt="Q-TriM framework overview"
+                class="research-image"
+              />
+            </div>
+
+            <div class="research-content">
+              <h3>
+                Q-TriM: Question-Guided Tri-Modal Attention for
+                Audio-Visual Question Answering
+              </h3>
+
+              <p class="venue">
+                European Conference on Computer Vision (ECCV 2026)
+              </p>
+
+              <p>
+                Q-TriM is a shallow and parallel multimodal attention framework
+                for Audio-Visual Question Answering. It captures
+                question-guided interactions among video, audio, and text while
+                reducing unnecessary sequential fusion.
+              </p>
+
+              <ul class="compact-list">
+                <li>Question-guided tri-modal attention design</li>
+                <li>Shallow and parallel multimodal fusion</li>
+                <li>Token filtering with straight-through estimation</li>
+                <li>End-to-end implementation, experiments, and paper writing</li>
+              </ul>
+
+              <div class="research-links">
+                <!-- Replace # with the paper URL when public -->
+                <a href="#publications">Publication details</a>
+                <a
+                  href="https://github.com/Kim-Sung-Hun"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Activity-style Update -->
+        <section class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">LATEST UPDATE</p>
+              <h2>Research Activity</h2>
+            </div>
+          </div>
+
+          <article class="post-card">
+            <div class="post-header">
+              <img
+                src="assets/profile.png"
+                alt="Sunghoon Kim"
+                class="post-avatar"
+              />
+
+              <div>
+                <h3>Sunghoon Kim</h3>
+                <p>M.S. Student in Computer Science at Korea University</p>
+                <span>June 2026 · Public</span>
+              </div>
+            </div>
+
+            <div class="post-body">
+              <p>
+                I’m excited to share that our paper,
+                <strong>
+                  “Q-TriM: Question-Guided Tri-Modal Attention for Audio-Visual
+                  Question Answering,”
+                </strong>
+                has been accepted to ECCV 2026.
+              </p>
+
+              <p>
+                As the sole student author, I independently led this project from
+                the initial research idea and model design to implementation,
+                experiments, and paper writing under the guidance of my professor.
+              </p>
+            </div>
+
+            <div class="post-media">
+              <img
+                src="assets/qtrim-teaser.png"
+                alt="Q-TriM research teaser"
+              />
+            </div>
+
+            <div class="post-footer">
+              <span>Research milestone · ECCV 2026</span>
+              <a href="#publications">View publication</a>
+            </div>
+          </article>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">CAREER</p>
+              <h2>Experience</h2>
+            </div>
+          </div>
+
+          <article class="timeline-item">
+            <div class="organization-mark ineeasy-mark">IN</div>
+
+            <div class="timeline-content">
+              <h3>AI Engineer Intern</h3>
+              <p class="organization">In-Easy Co., Ltd. · Internship</p>
+              <p class="timeline-meta">
+                January 2023 – February 2023 · Seoul, South Korea
+              </p>
+
+              <p>
+                Developed and evaluated machine-learning models for manufacturing
+                property prediction. Compared independent modeling approaches with
+                existing internal systems and used SHAP-based analysis to improve
+                interpretability for practical deployment.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">ACADEMICS</p>
+              <h2>Education</h2>
+            </div>
+          </div>
+
+          <article class="timeline-item">
+            <div class="organization-mark ku-mark">KU</div>
+
+            <div class="timeline-content">
+              <h3>Korea University</h3>
+              <p class="organization">M.S. in Computer Science</p>
+              <p class="timeline-meta">March 2024 – August 2026</p>
+            </div>
+          </article>
+
+          <div class="divider"></div>
+
+          <article class="timeline-item">
+            <div class="organization-mark uos-mark">UOS</div>
+
+            <div class="timeline-content">
+              <h3>University of Seoul</h3>
+              <p class="organization">
+                B.S. in Statistics · Double Major in Artificial Intelligence
+              </p>
+              <p class="timeline-meta">March 2020 – February 2024</p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">RESEARCH OUTPUT</p>
+              <h2>Publications</h2>
+            </div>
+          </div>
+
+          <article class="publication-item publication-featured">
+            <span class="publication-year">2026</span>
+
+            <div>
+              <h3>
+                Q-TriM: Question-Guided Tri-Modal Attention for
+                Audio-Visual Question Answering
+              </h3>
+
+              <p class="publication-venue">
+                European Conference on Computer Vision (ECCV 2026)
+              </p>
+
+              <p>
+                A shallow and parallel multimodal attention framework designed to
+                efficiently capture question-guided video, audio, and text
+                interactions for Audio-Visual Question Answering.
+              </p>
+
+              <div class="publication-links">
+                <!-- Replace # with the paper URL when public -->
+                <a href="#">Paper ↗</a>
+                <a href="#research">Project overview ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="divider"></div>
+
+          <article class="publication-item">
+            <span class="publication-year">2023</span>
+
+            <div>
+              <h3>Melody-Based Lyric Generation Using SeqGAN</h3>
+              <p class="publication-venue">Korean Institute of Information Scientists and Engineers</p>
+            </div>
+          </article>
+
+          <div class="divider"></div>
+
+          <article class="publication-item">
+            <span class="publication-year">2023</span>
+
+            <div>
+              <h3>
+                BAT-Transformer: Multimodal Emotion Recognition Using Audio,
+                Text, and Physiological Signals
+              </h3>
+              <p class="publication-venue">Korean Institute of Information Scientists and Engineers</p>
+            </div>
+          </article>
+
+          <div class="divider"></div>
+
+          <article class="publication-item">
+            <span class="publication-year">2022</span>
+
+            <div>
+              <h3>LSTM-Based Cryptocurrency Investment Study</h3>
+              <p class="publication-venue">Korean Institute of Information Scientists and Engineers</p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Patent -->
+        <section class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">INTELLECTUAL PROPERTY</p>
+              <h2>Patent</h2>
+            </div>
+          </div>
+
+          <article class="patent-item">
+            <span class="patent-number">10-2026-0015130</span>
+
+            <div>
+              <h3>
+                Question-Guided Tri-Modal Attention System for Audio-Visual
+                Question Answering
+              </h3>
+
+              <p>Filed January 26, 2026</p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Awards -->
+        <section id="honors" class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">RECOGNITION</p>
+              <h2>Awards & Honors</h2>
+            </div>
+          </div>
+
+          <div class="award-list">
+            <article class="award-item">
+              <span class="award-date">2024</span>
+              <div>
+                <h3>AICOSS Hackathon Competition — Excellence Award (5th Place)</h3>
+                <p>Dacon · University of Seoul</p>
+              </div>
+            </article>
+
+            <article class="award-item">
+              <span class="award-date">2023</span>
+              <div>
+                <h3>Academic Excellence Award, Fall Semester</h3>
+                <p>University of Seoul</p>
+              </div>
+            </article>
+
+            <article class="award-item">
+              <span class="award-date">2022</span>
+              <div>
+                <h3>Outstanding Paper Award, ACK 2022 ICT Mentoring Conference</h3>
+                <p>Korean Institute of Information Scientists and Engineers</p>
+              </div>
+            </article>
+
+            <article class="award-item">
+              <span class="award-date">2022</span>
+              <div>
+                <h3>Excellence Award, Public Data Analysis Competition</h3>
+                <p>Korea Education Association</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="card section-card">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">CERTIFICATIONS</p>
+              <h2>Credentials</h2>
+            </div>
+          </div>
+
+          <div class="credential-grid">
+            <article class="credential-item">
+              <strong>MOS Master</strong>
+              <span>Microsoft · Issued February 2021</span>
+            </article>
+
+            <article class="credential-item">
+              <strong>ADsP</strong>
+              <span>Korea Data Agency · Issued June 2022</span>
+            </article>
+
+            <article class="credential-item">
+              <strong>SQLD</strong>
+              <span>Korea Data Agency · Issued March 2026</span>
+            </article>
+
+            <article class="credential-item">
+              <strong>Big Data Analyst</strong>
+              <span>Korea Data Agency · Issued December 2025</span>
+            </article>
+          </div>
+        </section>
       </div>
-    </section>
 
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <section class="card sidebar-card">
+          <p class="eyebrow">AT A GLANCE</p>
+
+          <div class="sidebar-list">
+            <div>
+              <span>Current role</span>
+              <strong>M.S. Student</strong>
+            </div>
+
+            <div>
+              <span>Research focus</span>
+              <strong>Multimodal AI</strong>
+            </div>
+
+            <div>
+              <span>Latest milestone</span>
+              <strong>ECCV 2026 Acceptance</strong>
+            </div>
+
+            <div>
+              <span>Location</span>
+              <strong>Seoul, South Korea</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="card sidebar-card">
+          <p class="eyebrow">CONNECT</p>
+
+          <div class="contact-links">
+            <a href="mailto:sainthun11@naver.com">Email</a>
+
+            <a
+              href="https://github.com/Kim-Sung-Hun"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/%EC%84%B1%ED%9B%88-%EA%B9%80-31125525a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <!-- Add your Google Scholar URL here later -->
+            <a href="#">Google Scholar</a>
+          </div>
+        </section>
+
+        <section class="card sidebar-card">
+          <p class="eyebrow">SELECTED SKILLS</p>
+
+          <div class="skill-tags">
+            <span>PyTorch</span>
+            <span>Python</span>
+            <span>Computer Vision</span>
+            <span>Transformers</span>
+            <span>Audio AI</span>
+            <span>XGBoost</span>
+            <span>SHAP</span>
+            <span>GitHub</span>
+          </div>
+        </section>
+      </aside>
+    </div>
   </main>
 
-  <footer>
-    <p>© 2026 Your Name. Built with GitHub Pages.</p>
+  <footer class="site-footer">
+    <p>© 2026 Sunghoon Kim. Built with GitHub Pages.</p>
   </footer>
-
 </body>
 </html>
 ```
