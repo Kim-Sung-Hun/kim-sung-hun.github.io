@@ -1,450 +1,137 @@
 
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>SungHun Kim | Multimodal AI Researcher</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-
-  <style>
-    #experience .timeline-list {
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-      margin-top: 12px;
-    }
-
-    #experience .timeline-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 18px;
-      width: 100%;
-    }
-
-    #experience .timeline-marker {
-      width: 18px;
-      height: 18px;
-      border: 3px solid #2563eb;
-      border-radius: 50%;
-      flex-shrink: 0;
-      margin-top: 6px;
-      box-sizing: border-box;
-      background: transparent;
-    }
-
-    #experience .timeline-marker.hollow {
-      background: transparent;
-    }
-
-    #experience .timeline-marker.filled {
-      background: #2563eb;
-      box-shadow: inset 0 0 0 3px #ffffff;
-    }
-
-    #experience .timeline-content {
-      display: block;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="site-shell">
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <a class="brand" href="#home">SungHun Kim</a>
-      <p class="brand-subtitle">Multimodal AI Researcher</p>
-
-      <nav class="side-nav">
-        <a href="#home">Home</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#publications">Publications</a>
-        <a href="#patent">Patent</a>
-        <a href="#awards">Awards & Honors</a>
-      </nav>
-    </aside>
-
-    <main class="content">
-
-      <!-- Home -->
-      <section id="home" class="card hero-card">
-        <div class="cover-photo">
-          <img src="assets/cover.png" alt="Seoul night skyline cover image" />
-        </div>
-
-        <div class="hero-body">
-          <img class="profile-photo" src="assets/profile.png" alt="SungHun Kim profile photo" />
-
-          <div class="hero-info">
-            <div>
-              <p class="eyebrow">Korea University / 고려대학교</p>
-              <h1>김성훈 <span>(SungHun Kim)</span></h1>
-              <p class="role">Multimodal AI Researcher</p>
-              <p class="location">Seoul, Republic of Korea</p>
-            </div>
-          </div>
-
-          <div class="research-tags">
-            <span>Multimodal AI</span>
-            <span>Audio-Visual Question Answering</span>
-            <span>Vision-Language Learning</span>
-            <span>Deep Learning</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="card">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">WORK</p>
-            <h2>Experience</h2>
-          </div>
-        </div>
-
-        <div class="timeline-list">
-
-          <!-- POSCO DX -->
-          <article class="timeline-item">
-            <div class="timeline-marker filled"></div>
-
-            <div class="timeline-content">
-              <h3>AI Engineer · AI Workforce Team</h3>
-              <p class="item-company">POSCO DX (포스코DX)</p>
-              <p class="item-meta">Jul 2026 – Present</p>
-              <p class="item-location">Seoul, Republic of Korea</p>
-
-              <h4 class="experience-project">
-                Taxonomy-Based AI Agent Evaluation &amp; Performance Optimization
-              </h4>
-
-              <p class="experience-summary">
-                Designed and developed an integrated evaluation framework
-                to assess the reliability and performance of an enterprise
-                AI Agent platform.
-              </p>
-
-              <ul class="experience-details">
-                <li>
-                  Independently designed a platform-specific evaluation
-                  taxonomy and scoring rubrics covering Agent task execution,
-                  RAG retrieval and response quality, and MCP tool-use performance.
-                </li>
-                <li>
-                  Implemented an integrated evaluation module to analyze
-                  component-level results, identify failure patterns,
-                  and pinpoint areas for improvement.
-                </li>
-                <li>
-                  Developed performance monitoring and automated alerts
-                  that notify users when an Agent's evaluation score
-                  falls below a defined threshold.
-                </li>
-                <li>
-                  Built an A/B testing system to compare Agent prompts
-                  and configurations on matched evaluation sets,
-                  using paired-samples t-tests to assess statistical significance.
-                </li>
-              </ul>
-
-              <p class="experience-skills">
-                <strong>Skills</strong>
-                Java · Agentic AI · LLM · RAG · MCP ·
-                Evaluation Frameworks · Taxonomy &amp; Rubric Design ·
-                A/B Testing · Statistical Hypothesis Testing
-              </p>
-            </div>
-          </article>
-
-          <!-- INEEJI -->
-          <article class="timeline-item">
-            <div class="timeline-marker hollow"></div>
-
-            <div class="timeline-content">
-              <h3>AI Engineer Intern</h3>
-              <p class="item-company">INEEJI (인이지)</p>
-              <p class="item-meta">Jan 2023 – Feb 2023 · 2 months</p>
-              <p class="item-location">Seoul, Republic of Korea</p>
-
-              <h4 class="experience-project">
-                Real-Time Product Property Prediction for Smart Manufacturing
-              </h4>
-
-              <p class="experience-summary">
-                Developed and evaluated alternative machine-learning
-                models to predict product properties from structured
-                manufacturing process data.
-              </p>
-
-              <ul class="experience-details">
-                <li>
-                  Independently developed alternative predictive models
-                  using XGBoost and LightGBM, selecting tabular machine
-                  learning approaches suited to manufacturing process data.
-                </li>
-                <li>
-                  Compared model performance against an existing solution
-                  and identified product properties and operating conditions
-                  where the alternative models performed better.
-                </li>
-                <li>
-                  Applied SHAP values to interpret the influence of process
-                  variables, explain model behavior, and assess practical
-                  applicability in manufacturing.
-                </li>
-              </ul>
-
-              <p class="experience-skills">
-                <strong>Skills</strong>
-                Python · XGBoost · LightGBM · Tabular Machine Learning ·
-                SHAP · Model Evaluation · Explainable AI
-              </p>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section id="education" class="card">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">ACADEMICS</p>
-            <h2>Education</h2>
-          </div>
-        </div>
-
-        <div class="education-grid">
-          <article class="education-card">
-            <div class="education-badge">KU</div>
-            <div>
-              <h3>Korea University / 고려대학교</h3>
-              <p class="degree">M.S. in Computer Science</p>
-              <p class="item-meta">Mar 2024 – Aug 2026</p>
-            </div>
-          </article>
-
-          <article class="education-card">
-            <div class="education-badge blue-badge">UOS</div>
-            <div>
-              <h3>University of Seoul / 서울시립대학교</h3>
-              <p class="degree">
-                B.S. in Statistics (Major),
-                Artificial Intelligence (Double Major)
-              </p>
-              <p class="item-meta">Mar 2020 – Feb 2024</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Certifications -->
-      <section id="certifications" class="card">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">CREDENTIALS</p>
-            <h2>Certifications</h2>
-          </div>
-        </div>
-
-        <div class="credential-grid">
-          <article class="credential-card">
-            <h3>MOS Master</h3>
-            <p>Microsoft</p>
-            <span>Issued Feb 2021</span>
-          </article>
-
-          <article class="credential-card">
-            <h3>ADsP</h3>
-            <p>한국데이터산업진흥원</p>
-            <span>Issued Jun 2022</span>
-          </article>
-
-          <article class="credential-card">
-            <h3>빅데이터 분석기사</h3>
-            <p>한국데이터산업진흥원</p>
-            <span>Issued Dec 2025</span>
-          </article>
-
-          <article class="credential-card">
-            <h3>SQLD</h3>
-            <p>한국데이터산업진흥원</p>
-            <span>Issued Mar 2026</span>
-          </article>
-
-          <article class="credential-card">
-            <h3>TOEIC 850점</h3>
-            <p>YBM</p>
-            <span>Issued Feb 2025</span>
-          </article>
-
-          <article class="credential-card">
-            <h3>TOEIC Speaking 150점</h3>
-            <p>YBM</p>
-            <span>Issued Jan 2026</span>
-          </article>
-        </div>
-      </section>
-
-      <!-- Publications -->
-      <section id="publications" class="card">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">RESEARCH OUTPUTS</p>
-            <h2>Publications</h2>
-          </div>
-        </div>
-
-        <div class="publication-list">
-          <article class="publication-item">
-            <div class="publication-topline">
-              <span class="publication-venue">ECCV 2026</span>
-              <span>Jun 17, 2026</span>
-            </div>
-
-            <h3>
-              Q-TriM: Question-Guided Tri-Modal Attention
-              for Audio–Visual Question Answering
-            </h3>
-
-            <p>
-              Q-TriM addresses information loss and error accumulation
-              caused by deeply stacked multimodal attention in
-              Audio-Visual Question Answering. Instead of sequentially
-              fusing text, video, and audio through multiple attention
-              layers, it performs shallow and parallel fusion using
-              standard cross-attention together with a novel Tri-Modal
-              Attention operator, where Query, Key, and Value can
-              originate from different modalities.
-            </p>
-
-            <p>
-              A question-guided token filtering module uses
-              dot-product scoring and a straight-through estimator
-              to retain only question-relevant visual patches without
-              introducing additional attention depth. Cross-attention
-              and Tri-Modal Attention outputs are then combined through
-              a question-aware modality mixture, allowing complementary
-              information from text, video, and audio to contribute
-              directly to answer reasoning.
-            </p>
-
-            <p>
-              Q-TriM was evaluated on MUSIC-AVQA, MUSIC-AVQA-R, and
-              MUSIC-AVQA-v2.0. The model achieves strong
-              state-of-the-art performance, including 70.89% overall
-              accuracy on MUSIC-AVQA-R and 77.68% on MUSIC-AVQA,
-              demonstrating effective multimodal fusion, robustness,
-              and improved generalization to challenging and
-              out-of-distribution audio-visual questions.
-            </p>
-
-            <p class="publication-authors">
-              Authors: SungHun Kim, Seungjun Baek*
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Patent -->
-      <section id="patent" class="card">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">INTELLECTUAL PROPERTY</p>
-            <h2>Patent</h2>
-          </div>
-        </div>
-
-        <article class="patent-card">
-          <h3>
-            오디오 비주얼 질의 응답을 위한
-            질문 기반 삼중 모달 어텐션 시스템
-          </h3>
-
-          <p>
-            Question-Guided Tri-Modal Attention System
-            for Audio-Visual Question Answering
-          </p>
-
-          <div class="patent-meta">
-            <span>10-2026-0015130</span>
-            <span>Registered Jan 26, 2026</span>
-          </div>
-        </article>
-      </section>
-
-      <!-- Awards -->
-      <section id="awards" class="card">
-        <div class="section-header">
-          <div>
-            <p class="section-kicker">RECOGNITION</p>
-            <h2>Awards & Honors</h2>
-          </div>
-        </div>
-
-        <div class="award-list">
-          <article class="award-item">
-            <div class="award-year">2024</div>
-            <div>
-              <h3>
-                2023 AICOSS 해커톤 경진대회 —
-                우수상 (5th Place)
-              </h3>
-              <p>DACON / 서울시립대학교</p>
-            </div>
-          </article>
-
-          <article class="award-item">
-            <div class="award-year">2023</div>
-            <div>
-              <h3>
-                서울시립대학교 2023년 1학기
-                학생포상식 학술상
-              </h3>
-              <p>서울시립대학교</p>
-            </div>
-          </article>
-
-          <article class="award-item">
-            <div class="award-year">2022</div>
-            <div>
-              <h3>
-                한국정보처리학회 ICT 멘토링 학술대회
-                (ACK 2022) 우수 논문상
-              </h3>
-              <p>한국정보처리학회</p>
-            </div>
-          </article>
-
-          <article class="award-item">
-            <div class="award-year">2022</div>
-            <div>
-              <h3>
-                제4회 교육 공공데이터 분석 활용대회
-                우수상 (3rd Place)
-              </h3>
-              <p>대학교육협의회</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <p>© 2026 SungHun Kim. All rights reserved.</p>
-        <a href="#home">Back to top ↑</a>
-      </footer>
-
-    </main>
+<!-- Experience -->
+<section id="experience" class="card">
+  <div class="section-header">
+    <div>
+      <p class="section-kicker">WORK</p>
+      <h2>Experience</h2>
+    </div>
   </div>
-</body>
-</html>
 
+  <div class="timeline-list">
+
+    <!-- POSCO DX -->
+    <article class="timeline-item">
+      <div class="timeline-marker filled"></div>
+
+      <div class="timeline-content">
+        <h3>AI Engineer · AI Workforce Team</h3>
+        <p class="item-company">POSCO DX (포스코DX)</p>
+        <p class="item-meta">Jul 2026 – Present</p>
+        <p class="item-location">Seoul, Republic of Korea</p>
+
+        <h4 class="experience-project">
+          Taxonomy 기반 AI Agent 통합 평가 및 성능 최적화 시스템 개발
+        </h4>
+
+        <p class="experience-summary">
+          기업용 AI Agent 플랫폼의 신뢰성과 성능을 체계적으로 검증하기 위해
+          Taxonomy 및 Rubric 기반 통합 평가 시스템을 설계하고 개발했습니다.
+          Agent, RAG, MCP의 평가부터 성능 모니터링과 A/B 테스트까지
+          통합적으로 지원하는 평가 환경을 구축했습니다.
+        </p>
+
+        <ul class="experience-details">
+          <li>
+            사내 AI Agent 플랫폼의 구조와 특성을 분석하여
+            평가 항목 및 세부 분류 체계(Taxonomy)를 직접 설계하고,
+            플랫폼에 최적화된 평가 기준과 Rubric을 구축했습니다.
+          </li>
+
+          <li>
+            Agent의 업무 수행 능력, RAG의 검색 및 응답 품질,
+            MCP의 도구 활용 성능을 종합적으로 평가하는
+            통합 Evaluation 모듈을 개발하고,
+            평가 결과를 기반으로 성능 저하 요인과 개선 영역을
+            식별할 수 있는 환경을 구축했습니다.
+          </li>
+
+          <li>
+            Agent의 성능 지표를 지속적으로 모니터링하고,
+            평가 결과가 설정된 임계값 이하로 저하될 경우
+            사용자에게 자동으로 알림을 제공하는
+            성능 모니터링 및 알림 시스템을 개발했습니다.
+          </li>
+
+          <li>
+            프롬프트 및 Agent 구성 요소 변경에 따른 성능 차이를
+            정량적으로 비교하는 A/B 테스트 시스템을 개발했습니다.
+            동일한 평가 데이터와 기준을 적용하고,
+            대응 표본 t-검정(Paired Samples t-test)을 활용하여
+            변경 전후 성능 차이의 통계적 유의성을 검증했습니다.
+          </li>
+        </ul>
+
+        <p class="experience-skills">
+          <strong>Skills</strong>
+          Java · Agentic AI · LLM · RAG · MCP ·
+          Agent Evaluation · Taxonomy Design · Rubric Design ·
+          Performance Monitoring · A/B Testing ·
+          Paired Samples t-test
+        </p>
+      </div>
+    </article>
+
+    <!-- INEEJI -->
+    <article class="timeline-item">
+      <div class="timeline-marker hollow"></div>
+
+      <div class="timeline-content">
+        <h3>AI Engineer Intern</h3>
+        <p class="item-company">INEEJI (인이지)</p>
+        <p class="item-meta">Jan 2023 – Feb 2023 · 2 months</p>
+        <p class="item-location">Seoul, Republic of Korea</p>
+
+        <h4 class="experience-project">
+          스마트팩토리 제조 공정 데이터 기반 제품 물성 실시간 예측
+        </h4>
+
+        <p class="experience-summary">
+          스마트팩토리 제조 공정 데이터를 활용한 제품 물성
+          실시간 예측 프로젝트에 참여했습니다.
+          기존 예측 모델과 차별화된 머신러닝 기반 대안 모델을
+          독자적으로 개발하고, 예측 성능과 설명 가능성을
+          비교·분석했습니다.
+        </p>
+
+        <ul class="experience-details">
+          <li>
+            제조 공정 데이터가 이미지나 텍스트가 아닌
+            정형 데이터라는 특성을 고려하여
+            XGBoost, LightGBM 등 머신러닝 알고리즘을
+            중심으로 대안 예측 모델을 독자적으로 개발했습니다.
+          </li>
+
+          <li>
+            기존 예측 모델과 신규 모델의 성능을 비교·분석하여
+            일부 제품 물성 및 특정 제조 조건에서
+            기존 모델 대비 우수한 예측 성능을
+            보이는 구간을 확인했습니다.
+          </li>
+
+          <li>
+            SHAP Value를 활용하여 온도, 습도 등
+            주요 공정 변수가 예측 결과에 미치는 영향을 분석하고,
+            모델의 의사결정 근거를 해석함으로써
+            예측 결과의 설명 가능성을 높였습니다.
+          </li>
+
+          <li>
+            기존 모델과 신규 모델의 장단점을 종합적으로 비교하고,
+            예측 성능과 해석 가능성을 바탕으로
+            실제 제조 공정에서 활용 가능한
+            모델 적용 방향을 제시했습니다.
+          </li>
+        </ul>
+
+        <p class="experience-skills">
+          <strong>Skills</strong>
+          Python · XGBoost · LightGBM ·
+          Machine Learning · Tabular Data ·
+          SHAP · Explainable AI · Model Evaluation
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
